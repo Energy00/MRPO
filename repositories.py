@@ -13,10 +13,6 @@ class abstract_repository(ABC):
         pass
 
     @abstractmethod
-    def update(self):
-        pass
-
-    @abstractmethod
     def get_by_id(self, id):
         pass
 
@@ -40,9 +36,6 @@ class CategoryRepository(abstract_repository):
         self.session.delete(category)
         self.session.commit()
 
-    def update(self, new_category: Category, id: int):
-        pass
-
     def get_by_id(self, id:int):
         return self.session.query(Category).get(id)
 
@@ -62,9 +55,6 @@ class RecipeRepository(abstract_repository):
         recipe = self.session.query(Recipe).get(id)
         self.session.delete(recipe)
         self.session.commit()
-
-    def update(self, new_category: Category, id: int):
-        pass
 
     def get_by_id(self, id:int):
         return self.session.query(Recipe).get(id)
@@ -86,9 +76,6 @@ class PostRepository(abstract_repository):
         self.session.delete(post)
         self.session.commit()
 
-    def update(self, new_category: Category, id: int):
-        pass
-
     def get_by_id(self, id:int):
         return self.session.query(Post).get(id)
 
@@ -108,9 +95,6 @@ class CommentRepository(abstract_repository):
         comment = self.session.query(Comment).get(id)
         self.session.delete(comment)
         self.session.commit()
-
-    def update(self, new_category: Category, id: int):
-        pass
 
     def get_by_id(self, id:int):
         return self.session.query(Comment).get(id)
@@ -134,14 +118,8 @@ class IngridientRepository(abstract_repository):
         self.session.delete(ingridient)
         self.session.commit()
 
-    def update(self, new_category: Category, id: int):
-        pass
-
     def get_by_id(self, id:int):
-        return self.session.query(Ingridient).filter_by(name = ingredient.name).first()
-    
-    def get_by_name(self, name:str):
-        return self.session.query(Ingridient).get(name)
+        return self.session.query(Ingridient).get(id)
 
     def get_all(self):
         return self.session.query(Ingridient).all()
