@@ -13,3 +13,6 @@ post.recipe = recipe
 format = 'JSON'
 output = serializer.serialize(post, format)
 print(output)
+# for i in post.status('Delete Post'):
+#     print(i)
+print(next(post.status('Delete Post')))
