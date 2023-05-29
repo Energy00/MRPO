@@ -133,11 +133,10 @@ class Post:
         self.recipe = None
         self.category = category
         self.comments: List[Comment] = []
-        self.state = 'Start'
+        self.state = 'Created'
 
-    def status(self):
+    def status(self, event):
         while True:
-            event = yield self.state
             if self.state == 'Created':
                 if event == 'Delete Post':
                     self.state = 'Deleted'
@@ -149,8 +148,7 @@ class Post:
             elif self.state == 'Deleted':
                 if event == 'Restore Post':
                     self.state = 'Created'
-            else:
-                break
+            yield self.state
 
 
     def serialize(self, serializer):
