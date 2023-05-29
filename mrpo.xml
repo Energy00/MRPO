@@ -1,0 +1,18 @@
+<metadata>
+
+    <categories>
+    <category category_id="1"><name>Мясо</name></category><category category_id="2"><name>Выпечка</name></category></categories>
+
+    <ingridients>
+    <ingridient ingridient_id="1"><name>Курица</name></ingridient><ingridient ingridient_id="2"><name>Приправа для курицы</name></ingridient><ingridient ingridient_id="3"><name>Перец</name></ingridient><ingridient ingridient_id="4"><name>Соль</name></ingridient><ingridient ingridient_id="5"><name>Базилик</name></ingridient><ingridient ingridient_id="6"><name>Мука</name></ingridient><ingridient ingridient_id="7"><name>Тесто</name></ingridient><ingridient ingridient_id="8"><name>Вишня</name></ingridient></ingridients>
+
+    <recipes>
+    <recipe recipe_id="1"><name>Курица гриль</name><numbers_of_servings>6</numbers_of_servings><cooking_time>140</cooking_time><description>Мы поделимся простым рецептом блюда, которое готовится без особых усилий в домашних условиях.</description><ingridients><ingridient ingridient_id="1"><name>Курица</name></ingridient><ingridient ingridient_id="2"><name>Приправа для курицы</name></ingridient><ingridient ingridient_id="3"><name>Перец</name></ingridient><ingridient ingridient_id="4"><name>Соль</name></ingridient><ingridient ingridient_id="5"><name>Базилик</name></ingridient></ingridients></recipe><recipe recipe_id="2"><name>Пирожок с вишней</name><numbers_of_servings>6</numbers_of_servings><cooking_time>140</cooking_time><description>Мы поделимся простым рецептом блюда, которое готовится без особых усилий в домашних условиях.</description><ingridients><ingridient ingridient_id="6"><name>Мука</name></ingridient><ingridient ingridient_id="7"><name>Тесто</name></ingridient><ingridient ingridient_id="8"><name>Вишня</name></ingridient></ingridients></recipe></recipes>
+
+    <posts>
+    <post post_id="1"><name>Сочная курочка гриль или как все сжечь</name><author>Павел</author><description>Какая-та история</description><recipe>1</recipe><category>1</category></post><post post_id="2"><name>Вкуснейший пирожок</name><author>Павел</author><description>Какая-та история</description><recipe>2</recipe><category>2</category></post></posts>
+
+    <comments>
+    <comment comment_id="1"><author_username>Даша</author_username><message>Весело, но лучше такого не повторять</message><data_creating>2023-05-16</data_creating><post>1</post></comment><comment comment_id="2"><author_username>Илья</author_username><message>Прикольно вышло, надо попробовать</message><data_creating>2023-05-15</data_creating><post>1</post></comment><comment comment_id="3"><author_username>Даша</author_username><message>Весело, но лучше такого не повторять</message><data_creating>2023-05-16</data_creating><post>2</post></comment><comment comment_id="4"><author_username>Илья</author_username><message>Прикольно вышло, надо попробовать</message><data_creating>2023-05-15</data_creating><post>2</post></comment></comments>
+    
+</metadata>
